@@ -8,15 +8,31 @@ function kirimPendaftaran(event) {
     const pendidikan = document.getElementById('pendidikan').value;
     const program = document.getElementById('programPilihan').value;
 
-    const pesan = `Halo%20LPK%20Diposa%20Abhyakta%20Mandiri,%20saya%20ingin%20mendaftar%20diklat:%0A%0A` +
-                  `*Nama:*%20${encodeURIComponent(nama)}%0A` +
-                  `*No%20WA:*%20${encodeURIComponent(wa)}%0A` +
-                  `*Pendidikan:*%20${encodeURIComponent(pendidikan)}%0A` +
-                  `*Program:*%20${encodeURIComponent(program)}`;
+    // Form WhatsApp
+function kirimPendaftaran(event) {
+    event.preventDefault();
 
-    window.open(`https://wa.me/6287839549439?text=${pesan}`, '_blank');
+    const nama = document.getElementById('nama').value.trim();
+    const wa = document.getElementById('wa').value.trim();
+    const pendidikan = document.getElementById('pendidikan').value;
+    const program = document.getElementById('programPilihan').value;
+
+    // Menyesuaikan nilai pendidikan agar tampil lebih lengkap di WhatsApp
+    const pendidikanTampil = pendidikan === 'SMA/SMK'
+        ? 'SMA / SMK / Sederajat'
+        : pendidikan;
+
+    const pesan =
+    `Halo LPK Diposa Abhyakta Mandiri, saya ingin mendaftar diklat:\n\n` +
+    `*Nama:* ${nama}\n` +
+    `*No. WhatsApp:* ${wa}\n` +
+    `*Pendidikan Terakhir:* ${pendidikanTampil}\n` +
+    `*Program Diklat:* ${program}`;
+
+    const url = `https://wa.me/6287839549439?text=${encodeURIComponent(pesan)}`;
+
+    window.open(url, '_blank');
 }
-
 // Accordion FAQ
 function toggleFaq(id) {
     const content = document.getElementById(`faq-${id}`);
