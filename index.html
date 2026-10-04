@@ -1,41 +1,371 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Website resmi Diklat Kepala Laboratorium Sekolah Angkatan September 2026 oleh Diposa Abhyakta Mandiri bekerja sama dengan Universitas Negeri Yogyakarta.">
-<title>Diklat Kepala Laboratorium Sekolah | DAM</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPK Diposa Abhyakta Mandiri - Pelatihan & Sertifikasi K3</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#0B2545',
+                            900: '#134074',
+                        },
+                        brand: {
+                            green: '#2A9D8F',
+                            gold: '#E9C46A',
+                            accent: '#0077B6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-<header class="site-header"><div class="container nav-wrap">
-<a class="brand" href="#beranda"><img src="assets/logo-dam.png" alt="Diposa Abhyakta Mandiri"><span class="brand-divider"></span><span class="partner">Bekerja sama dengan<br><strong>Universitas Negeri Yogyakarta</strong></span></a>
-<button class="menu-toggle" aria-label="Buka menu">☰</button>
-<nav id="nav"><a class="active" href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#materi">Materi</a><a href="#narasumber">Narasumber</a><a href="#jadwal">Jadwal</a><a href="#pendaftaran">Pendaftaran</a><a href="#dokumentasi">Dokumentasi</a><a href="#kontak">Kontak</a></nav>
-<a class="nav-cta" href="https://bit.ly/Form_KalabSekolah_2026" target="_blank" rel="noopener">Daftar Sekarang ↗</a>
-</div></header>
-<main>
-<section id="beranda" class="hero"><div class="hero-grid container"><div class="hero-copy">
-<div class="eyebrow">PROGRAM PENGEMBANGAN PROFESIONAL</div>
-<h1>Diklat Kepala<br><span>Laboratorium Sekolah</span></h1>
-<p class="cohort">Angkatan September 2026</p>
-<p class="theme">“Menguatkan Peran Strategis Lab untuk Pembelajaran Bermutu”</p>
-<p class="lead">Program pengembangan kompetensi untuk calon dan Kepala Laboratorium Sekolah dalam mengelola laboratorium secara efektif, profesional, aman, dan mendukung pembelajaran bermutu.</p>
-<div class="hero-actions"><a class="btn primary" href="https://bit.ly/Form_KalabSekolah_2026" target="_blank" rel="noopener">Daftar Sekarang <span>→</span></a><a class="btn ghost" href="#tentang">Lihat Informasi <span>↓</span></a></div>
-<div class="trust"><span>Diposa Abhyakta Mandiri</span><i>×</i><span>Universitas Negeri Yogyakarta</span></div>
-</div><div class="hero-card"><div class="card-label">DIKLAT KEPALA LABORATORIUM SEKOLAH</div><div class="photo-frame"><img src="assets/dokumentasi-4.jpeg" alt="Dokumentasi kegiatan Diklat Kepala Laboratorium Sekolah"></div><div class="card-bottom"><div><small>Periode</small><strong>September 2026</strong></div><div><small>Pendaftaran</small><strong>Hingga 25 Sep 2026</strong></div></div></div></div></section>
-<section class="quick"><div class="container quick-grid"><div><b>25 September 2026</b><span>Batas pendaftaran</span></div><div><b>27 September 2026</b><span>Mulai pelaksanaan Diklat</span></div><div><b>Calon & Kepala Lab</b><span>Sasaran peserta</span></div><div><b>Sertifikat</b><span>Kepala Laboratorium Sekolah</span></div><div><b>Permendikdasmen No. 11 Tahun 2025</b><span>Rujukan yang tercantum pada materi publikasi</span></div></div></section>
-<section id="tentang" class="section"><div class="container split"><div><div class="section-kicker">TENTANG DIKLAT</div><h2>Meningkatkan Kompetensi, Mewujudkan Laboratorium yang Bermutu</h2><p>Diklat Kepala Laboratorium Sekolah dirancang sebagai program pelatihan untuk meningkatkan kompetensi calon dan kepala laboratorium sekolah dalam mengelola, mengembangkan, dan mengoptimalkan laboratorium sebagai sarana pembelajaran.</p><p>Program ini memadukan pembekalan pengetahuan dan pengalaman praktis agar peserta memahami peran strategis laboratorium dalam mendukung peningkatan mutu pendidikan.</p><div class="mini-stats"><div><strong>3+</strong><span>Fokus kompetensi utama</span></div><div><strong>4</strong><span>Narasumber tercantum</span></div><div><strong>1</strong><span>Program sertifikasi</span></div></div></div><div class="feature-image"><img src="assets/dokumentasi-2.jpeg" alt="Peserta kegiatan Diklat"></div></div></section>
-<section id="materi" class="section alt"><div class="container"><div class="section-head"><div><div class="section-kicker">PROGRAM & KOMPETENSI</div><h2>Fokus Pengembangan Peserta</h2></div><p>Kompetensi yang menjadi tujuan program berdasarkan informasi publikasi Diklat.</p></div><div class="cards"><article><div class="num">01</div><h3>Kepribadian</h3><p>Mendukung pengembangan sikap dan tanggung jawab profesional dalam menjalankan peran kepala laboratorium.</p></article><article><div class="num">02</div><h3>Sosial</h3><p>Menguatkan kemampuan berkomunikasi dan membangun kolaborasi dalam lingkungan sekolah.</p></article><article><div class="num">03</div><h3>Administratif</h3><p>Membekali pengelolaan administrasi laboratorium secara tertib dan terarah.</p></article><article><div class="num">04</div><h3>Profesional</h3><p>Mengembangkan kemampuan pengelolaan laboratorium yang mendukung pembelajaran bermutu.</p></article></div></div></section>
-<section id="narasumber" class="section"><div class="container"><div class="section-kicker">NARASUMBER</div><h2>Tenaga Ahli & Praktisi</h2><div class="speaker-grid"><div><span>01</span><h3>Dr. Phil. Ir. Muhamad Ali, S.T., M.T., IPU., ASEAN Eng.</h3><p>Narasumber Diklat</p></div><div><span>02</span><h3>Dr. Mutaqin, M.Pd., M.T.</h3><p>Narasumber Diklat</p></div><div><span>03</span><h3>Dr. Hatoyo, M.Pd., M.T.</h3><p>Narasumber Diklat</p></div><div><span>04</span><h3>Dr. Yuwono Indro H., M. Eng.</h3><p>Narasumber Diklat</p></div></div></div></section>
-<section id="jadwal" class="section alt"><div class="container"><div class="section-kicker">JADWAL & INFORMASI PENTING</div><h2>Agenda Angkatan September 2026</h2><div class="timeline"><div><b>01</b><h3>Pendaftaran</h3><p>Terbuka hingga <strong>25 September 2026</strong>.</p></div><div><b>02</b><h3>Pelaksanaan Diklat</h3><p>Direncanakan mulai <strong>27 September 2026</strong>.</p></div><div><b>03</b><h3>Sertifikat</h3><p>Peserta memperoleh Sertifikat Kepala Laboratorium Sekolah sesuai ketentuan program.</p></div></div></div></section>
-<section id="pendaftaran" class="section registration"><div class="container reg-box"><div><div class="section-kicker">PENDAFTARAN</div><h2>Siapkan Diri untuk Mengikuti Diklat</h2><p>Pendaftaran dilakukan secara online. Pastikan data yang diisi sesuai dan ikuti informasi dari penyelenggara.</p><ul><li>Mengisi formulir pendaftaran secara online</li><li>Membayar biaya Diklat Kepala Laboratorium</li><li>Menghubungi admin untuk keterangan lebih lanjut</li></ul></div><div class="reg-action"><div class="deadline">Batas pendaftaran<strong>25 September 2026</strong></div><a class="btn primary large" href="https://bit.ly/Form_KalabSekolah_2026" target="_blank" rel="noopener">Buka Formulir Pendaftaran →</a><small>Link resmi: bit.ly/Form_KalabSekolah_2026</small></div></div></section>
-<section class="section facilities"><div class="container"><div class="section-kicker">FASILITAS</div><h2>Yang Didapatkan Peserta</h2><div class="facility-grid"><div><b>Ilmu Pengetahuan</b><span>Pembekalan dan wawasan pengelolaan laboratorium</span></div><div><b>Networking</b><span>Kesempatan membangun jejaring profesional</span></div><div><b>Buku Lab</b><span>Materi pendukung kegiatan Diklat</span></div><div><b>Era Revolusi Industri 4.0</b><span>Perspektif pengelolaan lab di era teknologi</span></div><div><b>Sertifikat</b><span>Sertifikat Kepala Laboratorium Sekolah</span></div></div></div></section>
-<section id="dokumentasi" class="section alt"><div class="container"><div class="section-head"><div><div class="section-kicker">DOKUMENTASI</div><h2>Jejak Pelaksanaan Diklat</h2></div><p>Dokumentasi kegiatan Diklat Kepala Laboratorium Sekolah yang tersedia.</p></div><div class="gallery"><button class="gallery-item" data-index="0"><img src="assets/dokumentasi-1.jpeg" alt="Dokumentasi kegiatan Diklat 1"><span>Lihat foto ↗</span></button><button class="gallery-item" data-index="1"><img src="assets/dokumentasi-2.jpeg" alt="Dokumentasi kegiatan Diklat 2"><span>Lihat foto ↗</span></button><button class="gallery-item" data-index="2"><img src="assets/dokumentasi-3.jpeg" alt="Dokumentasi kegiatan Diklat 3"><span>Lihat foto ↗</span></button><button class="gallery-item" data-index="3"><img src="assets/dokumentasi-4.jpeg" alt="Dokumentasi kegiatan Diklat 4"><span>Lihat foto ↗</span></button><button class="gallery-item" data-index="4"><img src="assets/dokumentasi-5.jpeg" alt="Dokumentasi kegiatan Diklat 5"><span>Lihat foto ↗</span></button><button class="gallery-item" data-index="5"><img src="assets/dokumentasi-6.jpeg" alt="Dokumentasi kegiatan Diklat 6"><span>Lihat foto ↗</span></button><button class="gallery-item" data-index="6"><img src="assets/dokumentasi-7.jpeg" alt="Dokumentasi kegiatan Diklat 7"><span>Lihat foto ↗</span></button><button class="gallery-item" data-index="7"><img src="assets/dokumentasi-8.jpeg" alt="Dokumentasi kegiatan Diklat 8"><span>Lihat foto ↗</span></button><button class="gallery-item" data-index="8"><img src="assets/dokumentasi-9.jpeg" alt="Dokumentasi kegiatan Diklat 9"><span>Lihat foto ↗</span></button></div></div></section>
-<section id="kontak" class="section contact"><div class="container contact-grid"><div><div class="section-kicker">KONTAK</div><h2>Butuh Informasi Lebih Lanjut?</h2><p>Hubungi admin penyelenggara untuk informasi terkait pendaftaran, pelaksanaan, dan ketentuan Diklat.</p></div><div class="contact-card"><div><small>Penyelenggara</small><strong>Diposa Abhyakta Mandiri</strong></div><div><small>Bekerja sama dengan</small><strong>Universitas Negeri Yogyakarta (UNY)</strong></div><div><small>Kontak Admin</small><a href="tel:087839549439">087 839 549 439</a></div></div></div></section>
-</main>
-<footer><div class="container footer-grid"><div><img src="assets/logo-dam.png" alt="DAM"><p>Diposa Abhyakta Mandiri</p></div><div><b>Diklat Kepala Laboratorium Sekolah</b><span>Angkatan September 2026</span></div><div><b>Tautan</b><a href="https://bit.ly/Form_KalabSekolah_2026" target="_blank">Formulir Pendaftaran</a></div></div><div class="copyright">© 2026 Diposa Abhyakta Mandiri. Website informasi Diklat.</div></footer>
-<div class="lightbox" id="lightbox"><button class="close" aria-label="Tutup">×</button><img id="lightbox-img" src="" alt="Dokumentasi"><button class="prev">‹</button><button class="next">›</button></div>
-<script src="script.js"></script>
-</body></html>
+<body class="font-sans antialiased text-gray-800 bg-slate-50">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-40 bg-white border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo DAM Jelas & Terdokumentasi -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="flex items-center justify-center h-14 w-auto transition group-hover:scale-105">
+                        <img src="assets/logo-dam.png" alt="Logo Diposa Abhyakta Mandiri" class="h-14 w-auto object-contain">
+                    </div>
+                    <div>
+                        <span class="block text-lg font-black text-navy-900 leading-none">LPK DIPOSA</span>
+                        <span class="block text-xs font-bold text-gray-500 tracking-wider mt-1">ABHYAKTA MANDIRI</span>
+                        <span class="block text-[10px] text-gray-400 font-medium">NIB: 3007260173412</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
+                    <a href="#tentang" class="hover:text-navy-900 transition">Tentang Kami</a>
+                    <a href="#program" class="hover:text-navy-900 transition">Program Diklat</a>
+                    <a href="#sertifikasi" class="hover:text-navy-900 transition">Sertifikasi LSP</a>
+                    <a href="#faq" class="hover:text-navy-900 transition">FAQ</a>
+                    <a href="#kontak" class="hover:text-navy-900 transition">Kontak</a>
+                </nav>
+
+                <!-- CTA Header -->
+                <div class="hidden sm:block">
+                    <a href="#daftar" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold px-6 py-2.5 rounded-xl transition shadow-md">
+                        Daftar Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 lg:py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold text-brand-gold border border-white/20">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Pusat Pengembangan Kompetensi K3 Terpercaya</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">
+                    Membangun Tenaga Kerja Competent & Berbudaya K3
+                </h1>
+                <p class="text-gray-200 text-base sm:text-lg leading-relaxed">
+                    Partner pengembangan kompetensi K3 resmi untuk lulusan baru, institusi pendidikan, dan industri. Diselenggarakan berbasis praktik kontekstual dan mengacu SKKNI K3.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#program" class="bg-blue-600 hover:bg-blue-700 text-white text-center font-bold px-8 py-3.5 rounded-xl shadow-lg transition">
+                        Pilih Program Diklat
+                    </a>
+                    <a href="https://wa.me/6287839549439?text=Halo%20LPK%20Diposa,%20saya%20ingin%20konsultasi%20program%20diklat%20K3" target="_blank" class="bg-white/10 hover:bg-white/20 text-white text-center font-semibold px-6 py-3.5 rounded-xl backdrop-blur-md border border-white/30 transition">
+                        <i class="fab fa-whatsapp text-green-400 mr-2"></i> Konsultasi WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio Program Diklat (Sesuai Tampilan Sebelumnya) -->
+    <section id="program" class="py-16 sm:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900">Portofolio Program Diklat</h2>
+                <p class="mt-3 text-gray-600 text-base">Pilihan program pelatihan kompetensi K3 yang disesuaikan dengan kebutuhan Anda</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <span class="inline-block text-[11px] font-extrabold tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-md uppercase mb-4">
+                        Fresh Graduate
+                    </span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">K3 Dasar (Basic Safety)</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Didesain khusus untuk lulusan baru dan pekerja baru guna memahami fondasi dasar keselamatan kerja di industri.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <span class="inline-block text-[11px] font-extrabold tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-md uppercase mb-4">
+                        Certification Path
+                    </span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Persiapan Uji Kompetensi K3</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Bimbingan intensif persiapan asesmen uji kompetensi bidang K3 untuk sertifikasi LSP P3 / BNSP.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <span class="inline-block text-[11px] font-extrabold tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-md uppercase mb-4">
+                        Practical Skill
+                    </span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Identifikasi Bahaya & Risiko</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Pelatihan praktis analisis bahaya kerja menggunakan metode HIRARC dan Job Safety Analysis (JSA).
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <span class="inline-block text-[11px] font-extrabold tracking-wider text-red-500 bg-red-50 px-3 py-1 rounded-md uppercase mb-4">
+                        Emergency Response
+                    </span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Kesiapsiagaan Tanggap Darurat</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Pelatihan Pertolongan Pertama Pada Kecelakaan (P3K) serta penggunaan APAR dan penanggulangan kebakaran.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <span class="inline-block text-[11px] font-extrabold tracking-wider text-purple-600 bg-purple-50 px-3 py-1 rounded-md uppercase mb-4">
+                        Organization
+                    </span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Awareness SMK3 & Budaya K3</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Pemahaman Sistem Manajemen K3 (SMK3) serta strategi membangun budaya keselamatan di organisasi/perusahaan.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <span class="inline-block text-[11px] font-extrabold tracking-wider text-teal-600 bg-teal-50 px-3 py-1 rounded-md uppercase mb-4">
+                        Employability
+                    </span>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Career Readiness Talenta K3</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Program kesiapan karir profesional untuk membekali calon praktisi K3 agar siap bersaing di dunia kerja.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sertifikasi LSP (Kerja sama ICCOSH & BNSP) -->
+    <section id="sertifikasi" class="py-16 bg-white border-t border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
+                <div class="grid lg:grid-cols-2 gap-8 items-center relative z-10">
+                    <div>
+                        <span class="inline-block bg-brand-gold/20 text-brand-gold text-xs font-bold px-3 py-1 rounded-full border border-brand-gold/30 uppercase tracking-wider mb-4">
+                            Kredibilitas & Akreditasi
+                        </span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold leading-tight mb-4">
+                            Sertifikasi BNSP Melalui Kemitraan LSP ICCOSH
+                        </h2>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
+                            Untuk memastikan sertifikat yang diterbitkan diakui secara nasional dan industri, LPK Diposa Abhyakta Mandiri memfasilitasi pelaksanaan uji kompetensi (asesmen) bekerja sama dengan **LSP ICCOSH** (Lembaga Sertifikasi Profesi K3) yang terlisensi resmi oleh **BNSP** (Badan Nasional Sertifikasi Profesi).
+                        </p>
+                        <div class="grid sm:grid-cols-2 gap-4 border-t border-gray-800 pt-6">
+                            <div>
+                                <h4 class="font-bold text-brand-gold text-sm mb-1">Kredibilitas Terjamin</h4>
+                                <p class="text-xs text-gray-400">Pendidikan & diklat dilakukan oleh LPK, asesmen diuji independen oleh LSP P3 BNSP.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-gold text-sm mb-1">Standar SKKNI K3</h4>
+                                <p class="text-xs text-gray-400">Skema uji disusun berdasarkan Standar Kompetensi Kerja Nasional Indonesia terbaru.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Badge Lembaga -->
+                    <div class="flex flex-col items-center justify-center bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 text-center space-y-6">
+                        <div class="flex items-center justify-center space-x-6">
+                            <div class="bg-white p-4 rounded-xl shadow-md text-navy-900 font-black text-xl tracking-wider">
+                                BNSP
+                            </div>
+                            <div class="text-2xl font-bold text-gray-400">+</div>
+                            <div class="bg-white p-4 rounded-xl shadow-md text-navy-900 font-black text-xl tracking-wider">
+                                ICCOSH
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-300 max-w-sm">
+                            Jaminan mutu kelulusan yang diakui oleh dunia industri nasional dan internasional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 sm:py-24 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-navy-900">Pertanyaan Sering Diajukan (FAQ)</h2>
+                <p class="mt-2 text-gray-600 text-sm">Informasi penting mengenai pelaksanaan diklat dan sertifikasi K3</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full text-left px-6 py-4 font-bold text-navy-900 flex justify-between items-center hover:bg-slate-50 transition">
+                        <span>Apa bedanya LPK Diposa Abhyakta Mandiri dengan LSP ICCOSH?</span>
+                        <i id="icon-1" class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div id="faq-1" class="hidden px-6 pb-4 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
+                        LPK Diposa Abhyakta Mandiri bertindak sebagai Lembaga Pelatihan Kerja yang membimbing dan menyiapkan peserta agar kompeten. Sedangkan LSP ICCOSH adalah Lembaga Sertifikasi Profesi P3 berlisensi BNSP yang bertindak independen untuk menguji dan menerbitkan sertifikat kompetensi.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full text-left px-6 py-4 font-bold text-navy-900 flex justify-between items-center hover:bg-slate-50 transition">
+                        <span>Apakah lulusan fresh graduate bisa mengikuti program diklat ini?</span>
+                        <i id="icon-2" class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div id="faq-2" class="hidden px-6 pb-4 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
+                        Sangat bisa. Kami menyediakan program khusus *Fresh Graduate* dan *K3 Dasar (Basic Safety)* yang dirancang untuk membekali calon pekerja dari latar belakang SMA/SMK maupun Perguruan Tinggi agar memiliki keunggulan kompetensi di dunia kerja.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full text-left px-6 py-4 font-bold text-navy-900 flex justify-between items-center hover:bg-slate-50 transition">
+                        <span>Bagaimana metode pelaksanaan pelatihannya?</span>
+                        <i id="icon-3" class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div id="faq-3" class="hidden px-6 pb-4 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
+                        Pelatihan diselenggarakan secara fleksibel melalui metode *Blended Learning* (kombinasi teori secara daring/online dan sesi praktik/pembekalan lembar kerja kontekstual) sesuai skema program yang dipilih.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full text-left px-6 py-4 font-bold text-navy-900 flex justify-between items-center hover:bg-slate-50 transition">
+                        <span>Sertifikat apa saja yang akan diperoleh peserta?</span>
+                        <i id="icon-4" class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div id="faq-4" class="hidden px-6 pb-4 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
+                        Peserta yang menyelesaikan diklat akan mendapatkan Sertifikat Pelatihan resmi dari LPK Diposa Abhyakta Mandiri. Bagi peserta yang merekomendasikan diri dan lulus uji asesmen LSP ICCOSH, akan memperoleh Sertifikat Kompetensi BNSP.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Pendaftaran -->
+    <section id="daftar" class="py-16 bg-white border-t border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-extrabold text-navy-800">Formulir Pendaftaran Diklat</h2>
+                    <p class="text-xs text-gray-500 mt-1">Isi formulir di bawah ini untuk terhubung langsung dengan Tim Pendaftaran via WhatsApp</p>
+                </div>
+
+                <form id="formDiklat" onsubmit="kirimPendaftaran(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Nama Lengkap</label>
+                        <input type="text" id="nama" required placeholder="Masukkan nama sesuai KTP" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-navy-800 focus:outline-none">
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Nomor WhatsApp</label>
+                            <input type="tel" id="wa" required placeholder="Contoh: 08123456789" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-navy-800 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Pendidikan Terakhir</label>
+                            <select id="pendidikan" required class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-navy-800 focus:outline-none">
+                                <option value="">Pilih Pendidikan</option>
+                                <option value="SMA/SMK">SMA / SMK / Sederajat</option>
+                                <option value="D3">Diploma (D3)</option>
+                                <option value="S1/D4">Sarjana (S1 / D4)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Pilihan Program Diklat</label>
+                        <select id="programPilihan" required class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:ring-2 focus:ring-navy-800 focus:outline-none">
+                            <option value="">Pilih Program</option>
+                            <option value="K3 Dasar (Basic Safety)">K3 Dasar (Basic Safety)</option>
+                            <option value="Persiapan Uji Kompetensi K3">Persiapan Uji Kompetensi K3</option>
+                            <option value="Identifikasi Bahaya & Risiko">Identifikasi Bahaya & Risiko</option>
+                            <option value="Kesiapsiagaan Tanggap Darurat">Kesiapsiagaan Tanggap Darurat</option>
+                            <option value="Awareness SMK3 & Budaya K3">Awareness SMK3 & Budaya K3</option>
+                            <option value="Career Readiness Talenta K3">Career Readiness Talenta K3</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-md transition text-sm">
+                        <i class="fab fa-whatsapp mr-2"></i> Kirim Pendaftaran via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Kontak -->
+    <footer id="kontak" class="bg-navy-800 text-white pt-12 pb-8 border-t border-navy-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-3">
+                        <img src="assets/logo-dam.png" alt="Logo Diposa Abhyakta Mandiri" class="h-12 w-auto object-contain bg-white rounded-lg p-1">
+                        <span class="font-bold text-base">LPK Diposa Abhyakta Mandiri</span>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        Perum Pondok Permai Imogiri Barat 2 No. B3A, Ngoto, Bangunharjo, Sewon, Kabupaten Bantul, D.I. Yogyakarta 55188
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm uppercase tracking-wider mb-3">Kontak Resmi</h4>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li><i class="fas fa-envelope mr-2"></i> diposaam@gmail.com</li>
+                        <li><i class="fas fa-phone mr-2"></i> 0878 3954 9439</li>
+                        <li><i class="fas fa-phone mr-2"></i> 0852 1886 7618</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm uppercase tracking-wider mb-3">Jam Operasional</h4>
+                    <p class="text-xs text-gray-300">Senin - Jumat: 08.00 - 16.00 WIB<br>Sabtu: 08.00 - 12.00 WIB</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700/50 pt-6 text-center text-xs text-gray-400">
+                &copy; 2026 LPK Diposa Abhyakta Mandiri. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6287839549439?text=Halo%20LPK%20Diposa,%20saya%20ingin%20tanya%20informasi%20diklat%20K3" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 transition transform hover:scale-110">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,25 +1,54 @@
-# Website Resmi Diklat Kepala Laboratorium Sekolah — DAM
+# Website LPK Diposa Abhyakta Mandiri
 
-Website landing page profesional untuk **Diposa Abhyakta Mandiri (DAM)**, bekerja sama dengan **Universitas Negeri Yogyakarta (UNY)**.
+Versi ini memisahkan kode website menjadi file yang lebih rapi tanpa mengubah struktur visual utama dari HTML sumber.
 
-## Isi proyek
-- `index.html` — struktur dan konten website
-- `style.css` — desain responsif
-- `script.js` — menu mobile, navigasi aktif, dan galeri lightbox
-- `assets/logo-dam.png` — logo DAM
-- `assets/dokumentasi-*.jpeg` — dokumentasi kegiatan
+## Struktur
 
-## Informasi utama
-- Diklat Kepala Laboratorium Sekolah
-- Angkatan September 2026
-- Tema: “Menguatkan Peran Strategis Lab untuk Pembelajaran Bermutu”
-- Batas pendaftaran: 25 September 2026
-- Mulai pelaksanaan: 27 September 2026
-- Form: https://bit.ly/Form_KalabSekolah_2026
-- Kontak: 087 839 549 439
+```text
+DAM_WEBSITE_SPLIT/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── assets/
+    └── (asset gambar/logo website)
+```
+
+## Yang dipisahkan
+
+- `index.html` — struktur/markup halaman.
+- `style.css` — CSS custom yang sebelumnya berada di `<style>` pada HTML.
+- `script.js` — JavaScript untuk form pendaftaran WhatsApp dan accordion FAQ yang sebelumnya berada di `<script>` inline.
+- `README.md` — dokumentasi project.
+- `assets/` — tempat menyimpan logo DAM dan gambar lain yang dirujuk HTML.
+
+## Catatan penting
+
+Website ini masih menggunakan Tailwind CSS CDN dan Font Awesome CDN, seperti pada HTML sumber, agar tampilan yang sudah jadi tetap terjaga. Konfigurasi warna Tailwind sengaja tetap berada di `index.html` karena CDN Tailwind membacanya saat halaman dimuat. Ini bukan perubahan struktur visual.
+
+## Asset yang dibutuhkan
+
+Pastikan file yang dirujuk HTML tersedia di folder `assets/`, terutama:
+
+- `logo-dam.png`
+
+Hero saat ini menggunakan gambar dari Unsplash melalui URL eksternal. Jika ingin website benar-benar mandiri/offline atau lebih stabil untuk deployment, gambar hero sebaiknya nanti dipindahkan ke `assets/` dan URL CSS diganti ke file lokal.
 
 ## Menjalankan
-Klik dua kali `index.html` untuk membuka website di Chrome/Edge.
 
-## GitHub Pages
-Setelah repository GitHub dibuat dan file diunggah, aktifkan **Settings → Pages → Deploy from a branch → main → /(root)**. Setelah deployment selesai, GitHub akan memberikan URL publik website.
+1. Simpan `index.html`, `style.css`, dan `script.js` dalam satu folder.
+2. Pastikan folder `assets/` berada di level yang sama.
+3. Buka `index.html` di browser.
+4. Setelah lolos pengecekan, folder ini bisa langsung di-upload ke GitHub Pages/hosting.
+
+## Fitur yang dipertahankan
+
+- Navigasi anchor.
+- CTA daftar sekarang.
+- Tombol konsultasi WhatsApp.
+- Kartu program Diklat.
+- Section sertifikasi.
+- FAQ accordion.
+- Form pendaftaran yang mengirim data ke WhatsApp.
+- Floating WhatsApp button.
+- Responsive layout berbasis Tailwind breakpoint.
