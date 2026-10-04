@@ -3,14 +3,6 @@
 // Form WhatsApp
 function kirimPendaftaran(event) {
     event.preventDefault();
-    const nama = document.getElementById('nama').value;
-    const wa = document.getElementById('wa').value;
-    const pendidikan = document.getElementById('pendidikan').value;
-    const program = document.getElementById('programPilihan').value;
-
-    // Form WhatsApp
-function kirimPendaftaran(event) {
-    event.preventDefault();
 
     const nama = document.getElementById('nama').value.trim();
     const wa = document.getElementById('wa').value.trim();
