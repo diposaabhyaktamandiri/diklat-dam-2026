@@ -15,11 +15,19 @@ function kirimPendaftaran(event) {
         : pendidikan;
 
     const pesan =
-    `Halo LPK Diposa Abhyakta Mandiri, saya ingin mendaftar diklat:\n\n` +
-    `*Nama:* ${nama}\n` +
-    `*No. WhatsApp:* ${wa}\n` +
-    `*Pendidikan Terakhir:* ${pendidikanTampil}\n` +
-    `*Program Diklat:* ${program}`;
+`Halo, Admin LPK Diposa Abhyakta Mandiri.
+
+Saya ingin mendaftar program Diklat K3 melalui website resmi DAM.
+
+*DATA CALON PESERTA*
+*Nama Lengkap:* ${nama}
+*Nomor WhatsApp:* ${wa}
+*Pendidikan Terakhir:* ${pendidikanTampil}
+*Program Diklat:* ${program}
+
+Mohon informasi lebih lanjut mengenai prosedur pendaftaran, jadwal pelaksanaan, dan biaya diklat.
+
+Terima kasih.`;
 
     const url = `https://wa.me/6287839549439?text=${encodeURIComponent(pesan)}`;
 
