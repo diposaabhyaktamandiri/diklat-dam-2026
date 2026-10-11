@@ -10,9 +10,17 @@ function kirimPendaftaran(event) {
     const program = document.getElementById('programPilihan').value;
 
     // Menyesuaikan nilai pendidikan agar tampil lebih lengkap di WhatsApp
-    const pendidikanTampil = pendidikan === 'SMA/SMK'
-        ? 'SMA / SMK / Sederajat'
-        : pendidikan;
+    const pendidikanMap = {
+    'SMA/SMK': 'SMA / SMK / Sederajat',
+    'D3': 'Diploma (D3)',
+    'S1/D4': 'Sarjana (S1 / D4)',
+    'S2': 'Magister (S2)',
+    'S3': 'Doktor (S3)',
+    'Lainnya': 'Lainnya'
+};
+
+const pendidikanTampil = pendidikanMap[pendidikan] || pendidikan;
+
 
     const pesan =
 `Halo, Admin LPK Diposa Abhyakta Mandiri.
